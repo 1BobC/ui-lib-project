@@ -6,19 +6,79 @@
   <style>
     body{ font-size: 1.5em; }
     .container{ margin: 40px; margin-top: 60px; }
+    button{
+      width: 200px;
+      background: #eee;
+      padding: 10px;
+      margin: 20px auto;
+      border: none;
+      border-radius: 4px;
+      font-size: 1em;
+      cursor: pointer;
+      display: block;
+    }
   </style>
   <title>UI Library</title>
 </head>
 <body>
   <h1>UI Library</h1>
 
-  <div class="container">
+<div class="container">
   <!-- tooltip -->
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit 
     tempora explicabo neque officiis, quas nihil <span class="tooltip" datamessage="I'm a tooltip!">dicta repellendus 
     cumque.</span> Voluptates illum praesentium odit perferendis laboriosam 
     illo odio ullam, veniam rerum id.</p>
+
+    <h2>Services</h2>
+  <!-- dropdowns -->
+  <div class = "dropdown">
+    <div class = "trigger">Awesome T-shirt Designs</div>
+    <div class = "content">
+      <p>ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sunt id accusantium 
+        dolorum, atque laudantium magni quas porro facilis laboriosam ipsam nemo fuga ad architecto 
+        quod, numquam, nam nesciunt eveniet.</p>
+    </div>
   </div>
+  <div class = "dropdown">
+    <div class = "trigger">Cool Sticker Printing</div>
+    <div class = "content">
+      <p>ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sunt id accusantium 
+        dolorum, atque laudantium magni quas porro facilis laboriosam ipsam nemo fuga ad architecto 
+        quod, numquam, nam nesciunt eveniet.</p>
+    </div>
+  </div>
+
+    <h2>More Information</h2>
+    <!-- tabs -->
+      <ul>
+        <li class="trigger active" data-target="#about">About</li>
+        <li class="trigger" data-target="#delivery">Delivery info</li>
+        <li class="trigger" data-target="#returns">Returns info</li>
+      </ul>
+      <div id="about" class="content active">
+        <h3>about</h3>
+        <p>ipsum Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam dicta, obcaecati sed 
+          placeat magni veniam alias! Possimus temporibus consectetur pariatur ex libero repellendus. 
+          Voluptates earum fuga quae tempora accusamus aliquam.</p>
+      </div>button <snackbar-trigger></snackbar-trigger>
+      <div id="delivery" class="content">
+        <h3>delivery</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae asperiores fuga dolorum, 
+          quisquam non ab placeat cum, ad minima, vel reprehenderit eum beatae id expedita in quasi. 
+          Dignissimos, iusto aut?</p>
+      </div>
+      <div id="returns" class="content">
+        <h3>returns</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, magni ratione rem 
+          molestiae officiis quo corporis omnis dolore quae sed culpa unde voluptatum sapiente vitae 
+          facilis at numquam minima? Animi.</p>
+      </div>
+  </div>
+    <div>
+      <button class="snackbar-trigger">click me</button>
+    </div>
+</div>
 
   <script src="assets/bundle.js"></script>
 </body>
